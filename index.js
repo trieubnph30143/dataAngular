@@ -1,6 +1,6 @@
-import express from "express";
-import connectDB from "./connectMongo.js";
-import router from "./src/routes/index.js";
+const express = require("express");
+const connectDB = require("./connectMongo.js");
+const router = require("./src/routes/index.js");
 const app = express();
 
 app.use(express.json());

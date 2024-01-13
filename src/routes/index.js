@@ -1,10 +1,9 @@
-import { Router } from "express";
-import routerProduct from "./product.js";
+const { Router } = require("express");
+const routerProduct = require("./product");
 
 const router = Router();
 
 // Thêm các route vào đây
 router.use("/product", routerProduct);
 
-
-export default router;
+module.exports = router;
